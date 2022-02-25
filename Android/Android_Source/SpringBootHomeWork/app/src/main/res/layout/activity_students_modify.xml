@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    tools:context=".StudentsModifyActivity">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgBg"
+                android:layout_width="412dp"
+                android:layout_height="197dp"
+                android:scaleType="center"
+                app:srcCompat="@mipmap/stu_bg" />
+            <ImageView
+                android:id="@+id/imgUser"
+                android:layout_width="129dp"
+                android:layout_height="150dp"
+                android:layout_gravity="right|bottom"
+                app:srcCompat="@mipmap/user" />
+
+            <TextView
+                android:id="@+id/txTitle"
+                android:layout_width="186dp"
+                android:layout_height="64dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="left|bottom"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Edit Your \nInformation"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginTop="20dp"
+            >
+
+
+
+            <TextView
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="28dp"
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_row="0"
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                 />
+
+            <TextView
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_row="2"
+                android:id="@+id/txID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="28dp"
+                android:text="Password"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               />
+
+            <TextView
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_row="4"
+                android:id="@+id/txContactNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="28dp"
+                android:text="Contact Number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_row="6"
+                android:id="@+id/txBatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="28dp"
+                android:text="Batch"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+              />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_column="1"
+                android:gravity="center"
+                android:id="@+id/radioGroup"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="one" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="two" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="three" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_row="8"
+                android:id="@+id/txAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="28dp"
+                android:text="Age"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_row="10"
+                android:id="@+id/txAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="28dp"
+                android:text="Address"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               />
+
+            <TextView
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_row="12"
+                android:id="@+id/txEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="28dp"
+                android:text="Email"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               />
+
+            <EditText
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_row="0"
+                android:id="@+id/edName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Fiona"
+                />
+
+            <EditText
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_row="14"
+                android:id="@+id/edBatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="one"
+                android:visibility="invisible"
+                />
+
+
+            <EditText
+                android:layout_column="1"
+                android:layout_row="8"
+                android:id="@+id/edAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edBatch" />
+
+            <EditText
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_row="10"
+                android:id="@+id/edAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Hainan University"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edAge" />
+
+            <EditText
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_row="4"
+                android:id="@+id/edContactNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:text="13344447777"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edAddress" />
+
+            <EditText
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_row="12"
+                android:id="@+id/edEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:text="fiona@qq.com"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edContactNumber" />
+
+            <EditText
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_row="2"
+                android:id="@+id/edPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edName" />
+
+            <Button
+                android:layout_gravity="fill"
+                android:id="@+id/btAsk"
+                android:layout_width="252dp"
+                android:layout_height="47dp"
+                android:layout_margin="30dp"
+                android:layout_columnSpan="2"
+                android:text="Submit"
+                />
+
+        </GridLayout>
+
+
+
+    </LinearLayout></ScrollView>
